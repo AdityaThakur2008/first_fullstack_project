@@ -1,0 +1,6 @@
+@media (max-width: 575.98px) {
+  .allListings .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

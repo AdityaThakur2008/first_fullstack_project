@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass {
+  color: rgb(255, 68, 114);
+  font-size: 2rem;
+}
+.nav-link {
+  color: rgb(0, 0, 0) !important;
+}
+/* footer */
+.f-info-links a {
+  text-decoration: none;
+  color: rgb(40, 39, 39);
+  margin: 1rem;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.f-info {
+  background-color: rgb(212, 210, 210);
+  height: 8rem;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Cards */
+.card-img-top {
+  height: 20rem !important;
+  border-radius: 1.5rem !important;
+  margin-bottom: 0.5rem;
+}
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rm;
+}
+.card-body {
+  padding: 0 !important;
+}
+.allListings {
+  margin-top: 3rem !important;
+}
+.listing-link {
+  text-decoration: none !important;
+}
+/* card overlay */
+.card-img-overlay {
+  opacity: 0;
+  transition: 0.3s;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+/* new page */
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+/* Edit-page */
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+/* show page */
+.show-img {
+  height: 30vh;
+}
+.show-btns {
+  display: flex;
+  gap: 1rem;
+}
+.Newlisting {
+  background-color: #fe424d !important;
+  color: white !important;
+  border-radius: 25px !important;
+}

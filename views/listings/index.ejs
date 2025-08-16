@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate.ejs') -%>
+<link rel="stylesheet" href="/css/index.css" />
+<body>
+  <h1>All Listings</h1>
+  <div
+    class="allListings row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 mt-3"
+  >
+    <% for (let list of allListings) { %> <% if (!list._id) continue; %>
+    <div class="col">
+      <a
+        class="listing-link text-decoration-none text-dark"
+        href="/listings/<%= list._id %>"
+      >
+        <div class="card h-100 shadow-sm listing-card">
+          <img
+            src="<%= list.image.url %>"
+            class="card-img-top"
+            alt="listing_image"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><b><%= list.title %></b></h5>
+            <p class="card-text mb-1"><%= list.location %></p>
+            <p class="card-price text-success fw-semibold">
+              ₹<%= Number(list.price).toLocaleString("en-IN") %> / night
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <% } %>
+  </div>
+</body>
