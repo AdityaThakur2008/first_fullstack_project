@@ -43,7 +43,7 @@ async function main() {
 console.log("views path:", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
-  res.send("Hi i am root ");
+  res.redirect("/listings");
 });
 
 const sessionOptions = {
